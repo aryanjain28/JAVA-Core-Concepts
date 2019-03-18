@@ -1,12 +1,11 @@
-package java_project;
-
-//Unlike C++ which is partially object oriented, 
-//JAVA is FULLY object oriented programming language.
-//That means we are going to write each & everything inside classes.
-
+/*
+Unlike C++ which is partially object oriented, 
+JAVA is FULLY object oriented programming language.
+That means we are going to write each & everything inside classes.
+*/
 
 //Syntax of class:
-public class Date 
+public class ClassName              //ClassName can be anything  
 {
 	//#1. The first thing your computer does is it looks for a method call main.
 	//#2. You program starts from main method.
