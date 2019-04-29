@@ -1,0 +1,39 @@
+public class Test
+{
+	Test()
+	{
+		String S1 = new String("Hello");
+		String S2 = new String("Hello");
+		String S3 = new String("World");
+		
+		//equal method : return type boolean
+		//It simply provides a true value is strings are
+		//equal.
+		
+		if(S1.equals(S2))
+			System.out.println("Equal");
+		
+		// == : 
+		//This simply checks for references
+		//This should not be used for quality of Strings
+		if(S1 == S2)
+			System.out.println("Equal");
+		
+		//compareTo method : return type integer
+		//it checks strings lexicographically (like dictionary)
+		// 0 : equal
+		// +ve value : first string  > second string
+		// -ve value : first string  < second string
+		
+		if(S1.compareTo(S2) == 0)
+			System.out.println("S1 == S2");
+		if(S1.compareTo(S3) < 0)
+			System.out.println("S1 < S3");
+		
+		
+	}
+	public static void main(String[] args) 
+	{
+		Test O = new Test();
+	}
+}
