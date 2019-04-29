@@ -1,0 +1,29 @@
+class Test
+{	//Strings are immutable. It simply means a string objrct cannot be
+	//changed once initialized.
+	
+	//StringBuffer are mutable, there object can be changed once initialized.
+	
+	public void Test1()
+	{
+		String S = new String("Something");
+		S.concat(" Special."); 
+		//This will print "Something".
+		System.out.println(S);
+	}
+		
+	public void Test2()
+	{
+		StringBuffer S1 = new StringBuffer("Something");
+		S1.append(" Special");
+		//This will print "Something Special".
+		System.out.println(S1);
+	}
+	
+	public static void main(String[] args) 
+	{
+		Test t = new Test();
+		t.Test1();
+		t.Test2();
+	}
+}

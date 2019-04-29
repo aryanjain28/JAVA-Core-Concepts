@@ -1,0 +1,31 @@
+class Test
+{
+	//StringBuilder method is same as StringBuffer.
+	//They create mutable strings
+	
+	//There is one important difference between StringBuffer & StringBuilder.
+	
+	/*#1.StringBuffer is synchronized i.e. thread safe. 
+	 * It means two threads can't call the methods of StringBuffer simultaneously.
+	 *
+	 * StringBuffer are less efficient.
+	 * 
+	 * whereas,
+	 * 
+	 *#2.StringBuilder is non-synchronized i.e. not thread safe. 
+	 * It means two threads can call the methods of StringBuilder simultaneously.
+	 * 
+	 * StringBuilder are more efficient.
+	 */
+	
+	public Test()
+	{
+		StringBuilder S = new StringBuilder("Hello ");
+		System.out.println(S.append(" world."));
+	}
+	
+	public static void main(String[] args) 
+	{
+		Test O = new Test();
+	}
+}
