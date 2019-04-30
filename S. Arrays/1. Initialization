@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+/*1. In JAVA, all arrays are dynamically allocated.
+ *2. The direct superclass of an array type is Object.
+ *3. Every array type implements the interfaces Cloneable and java.io.Serializable.
+ */
+
+/* IMPORTANT : 
+ * Array can contains primitives data types as well as objects 
+ * of a class depending on the definition of array. 
+ * In case of primitives data types, the actual values are stored 
+ * in contiguous memory locations. 
+ * In case of objects of a class, 
+ * the actual objects are stored in heap segment.
+ */
+
+class Example
+{
+	public int x=10;
+}
+
+public class Solution
+{
+	public Solution() 
+	{
+		//initialization :: 
+		int [] n = new int [10]; //an array named n with 10 elements.
+		
+		for(int i=0; i<10; i++)
+			n[i] = i+23;		//an example to fill array
+		
+		System.out.println((n[0]+n[1])); //23+24 = 47
+		
+		Example Obj[] = new Example [20]; //An array of objects of class Example.
+										//These are stored in Heap unlike primitive data-type,
+										//They are stored in contiguous memory.
+		
+		//Note that the objects are not initialized. This will give a run-time error.
+		
+		Scanner in = new Scanner(System.in);
+		
+		for(int i=0; i<10; i++)
+		{
+			Obj[i] = new Example();   //Initialization of each object.
+			Obj[i].x = in.nextInt();
+		}
+		
+		System.out.println("Values : \n\n");
+		
+		for(int i=0; i<10; i++)
+		{
+			System.out.println(Obj[i].x);	//Accessing values.		
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		Solution S = new Solution();
+	}
+}
