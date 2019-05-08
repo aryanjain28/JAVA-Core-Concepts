@@ -13,5 +13,11 @@ public class Solution
 		
 		Collections.addAll(list2, food);
 		System.out.println(list2);
+		
+		//frequency method :: returns the number of times same element is present
+		System.out.println(Collections.frequency(list2, "Pasta")); //returns 1
+		
+		//disjoint method :: return true if none of the element in two list is same.
+		System.out.println(Collections.disjoint(list1, list2)); //returns false
 	}
 }
