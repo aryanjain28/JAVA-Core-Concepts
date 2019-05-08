@@ -17,5 +17,15 @@ public class Solution
 		List<Character> lcopy = Arrays.asList(Ccopy);
 		Collections.copy(lcopy, l);
 		System.out.println(lcopy);
+		
+		//sort an array
+		String[] names = {"Zack", "Cody", "John", "Andrew"};
+		List<String> list1 = Arrays.asList(names);
+		
+		Collections.sort(list1); //ascending order
+		System.out.println(list1); 
+		
+		Collections.sort(list1, Collections.reverseOrder()); //descending order
+		System.out.println(list1); 
 	}
 }
