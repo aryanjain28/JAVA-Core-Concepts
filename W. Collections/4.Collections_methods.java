@@ -27,5 +27,10 @@ public class Solution
 		
 		Collections.sort(list1, Collections.reverseOrder()); //descending order
 		System.out.println(list1); 
+		
+		//filling
+		Collections.fill(list1, "XXX");
+		System.out.println(list1); //replace every word inside list1 with XXX
+		//similar to replace
 	}
 }
